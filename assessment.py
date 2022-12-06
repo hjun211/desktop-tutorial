@@ -38,6 +38,9 @@ class TestBowlingGame(unittest.TestCase):
         for i in range(rolls):
             self.game.rolls(pins)
 
+
+if __name__ == '__main__':
+    unittest.main()
 #Your tasks for code parts:
 #1: If there are any bugs in the code, you have to remove using debugging and run the project and test cases.
 #2: Refactor the code (Improve its structure without changing external behaviour).
