@@ -31,13 +31,13 @@ class TestBowlingGame(unittest.TestCase):
     def testPerfectGame(self):
         self.rollMany(10,12)
         assert self.game.score()==300
-    def testOneSpare(self):
+    def testSecondSpare(self):
         self.rollMany(5,21)
         assert self.game.score()==150
     def rollMany(self, pins,rolls):
         for i in range(rolls):
             self.game.rolls(pins)
-            
+
 #Your tasks for code parts:
 #1: If there are any bugs in the code, you have to remove using debugging and run the project and test cases.
 #2: Refactor the code (Improve its structure without changing external behaviour).
