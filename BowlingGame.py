@@ -32,8 +32,8 @@ class BowlingGame:
     def stickeScore(self,rollIndex): # if index position is 10, it is a strike
         return  10+ self.rolls[rollIndex+1]+ self.rolls[rollIndex+2] # scoring a strike
 
-    def spareScore(self,rollIndex):
-        return  10+ self.rolls[rollIndex+2]
+    def spareScore(self,rollIndex): # if 2 index position adds up to 10 it is a spare
+        return  10+ self.rolls[rollIndex+2] # this counts the spare plus next value on index
 
     def frameScore(self, rollIndex):
         return self.rolls[rollIndex] + self.rolls[rollIndex + 1]
