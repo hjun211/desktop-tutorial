@@ -3,7 +3,7 @@
 
 class BowlingGame:
     def __init__(self):
-        self.rolls=[]
+        self.rolls=[] # list called rolls is created
 
     def roll(self,pins):
         self.rolls.append(pins)
