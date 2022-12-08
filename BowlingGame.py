@@ -23,7 +23,7 @@ class BowlingGame:
             rollIndex +=2
             return result
 
-    def isStrike(self, rollIndex):
+    def isStrike(self, rollIndex):  # if index position equals 10 strikes, return value for stike = 10
         return self.rolls[rollIndex] == 10
     
     def isSpare(self, rollIndex):
