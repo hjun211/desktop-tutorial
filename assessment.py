@@ -28,7 +28,7 @@ class TestBowlingGame(unittest.TestCase):
         self.game.rolls(3)
         self.rollMany(0,16)
         assert  self.game.score()==24
-    def testPerfectGame(self):
+    def testPerfectGame(self): # simulate for hitting 12 strikes throughout game
         self.rollMany(10,12)
         assert self.game.score()==300
     def testSecondSpare(self):
