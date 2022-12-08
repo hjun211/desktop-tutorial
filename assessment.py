@@ -13,7 +13,7 @@ class TestBowlingGame(unittest.TestCase):
         for i in range(0, 20):
             self.game.rolls(0)
         assert self.game.score()==0
-    def testAllOnes(self):
+    def testAllOnes(self):   # simulates hitting only 1 pins throughout game
         self.rollMany(1, 20)
         assert self.game.score()==20
     def testOneSpare(self):
