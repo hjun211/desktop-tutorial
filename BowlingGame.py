@@ -8,7 +8,7 @@ class BowlingGame:
     def roll(self,pins):
         self.rolls.append(pins) # this function adds to roll list
 
-    def score(self):
+    def score(self):  # this method (calling it method cause thats what criteria says) scores the game
         result = 0
         rollIndex=0
         for frameIndex in range(10):
