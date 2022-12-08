@@ -26,8 +26,8 @@ class BowlingGame:
     def isStrike(self, rollIndex):  # if index position equals 10 strikes, return value for stike = 10
         return self.rolls[rollIndex] == 10
     
-    def isSpare(self, rollIndex):
-        return self.rolls[rollIndex]+ self.rolls[rollIndex+1]==10
+    def isSpare(self, rollIndex):   # if 2 index position equals 10, then it is a spare. 
+        return self.rolls[rollIndex]+ self.rolls[rollIndex+1]==10 # this line counts the 2 pins to determine if it is a spare
     
     def stickeScore(self,rollIndex):
         return  10+ self.rolls[rollIndex+1]+ self.rolls[rollIndex+2]
