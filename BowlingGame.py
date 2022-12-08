@@ -6,7 +6,7 @@ class BowlingGame:
         self.rolls=[] # list called rolls is created
 
     def roll(self,pins):
-        self.rolls.append(pins)
+        self.rolls.append(pins) # this function adds to roll list
 
     def score(self):
         result = 0
