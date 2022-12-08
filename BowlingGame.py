@@ -35,6 +35,6 @@ class BowlingGame:
     def spareScore(self,rollIndex): # if 2 index position adds up to 10 it is a spare
         return  10+ self.rolls[rollIndex+2] # this counts the spare plus next value on index
 
-    def frameScore(self, rollIndex):
-        return self.rolls[rollIndex] + self.rolls[rollIndex + 1]
+    def frameScore(self, rollIndex): # if it is not a strike or a spare it counts the index position
+        return self.rolls[rollIndex] + self.rolls[rollIndex + 1] # returns that value 
 		
